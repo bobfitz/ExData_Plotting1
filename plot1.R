@@ -14,6 +14,7 @@ plot1 <-function()
                 
         # make plot 1
         png(file="plot1.png", width=480, height=480)
+        par(bg="white")
         hist(xs$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
         # close the png        
         dev.off()
