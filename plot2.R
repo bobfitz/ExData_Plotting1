@@ -14,6 +14,7 @@ plot2 <-function()
         
         # make plot 2  
         png(file="plot2.png", width=480, height=480)
+        par(bg="white")
         plot(xs$Date+xs$Time, xs$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
         
         # close the png
