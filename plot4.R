@@ -14,7 +14,7 @@ plot4 <-function()
         # plot4
         png(file="plot4.png", width=480, height=480)
         # setup the four plot grid
-        par(mfrow=c(2,2), mar=c(4,4,4,1))
+        par(mfrow=c(2,2), mar=c(4,4,4,1), bg="white")
         # top left
         plot(xs$Date+xs$Time, xs$Global_active_power, type="n", ylab="Global Active Power", xlab ="")
         points(xs$Date+xs$Time, xs$Global_active_power, type="l")
